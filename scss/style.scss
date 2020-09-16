@@ -22,15 +22,18 @@ body {
 }
 
 .section-outer {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .section-inner {
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
 .btn-start {
   @include font-montserrat;
+  display: inline-block;
   border: none;
   font-size: 16px;
   margin: 0;
@@ -127,7 +130,7 @@ body {
           padding: 16px 20px;
           outline: none;
           border-radius: 4px;
-          width: 375px;
+          width: 100%;
           transition: 0.2s;
 
           &::placeholder {
@@ -189,7 +192,7 @@ body {
     &__video {
       img {
         width: 100%;
-        height: auto;
+        
       }
     }
   }
@@ -335,15 +338,16 @@ body {
         .free-button {
           background: #fff;
           color: #000;
-					border: solid 1px #000;
-					
-					&:hover{
-						color: #fe4fa7;
-        }
-      }
+          border: solid 1px #000;
 
-      &.active {
-        background-color: #f6fafd;
+          &:hover {
+            color: #fe4fa7;
+          }
+        }
+
+        &.active {
+          background-color: #f6fafd;
+        }
       }
     }
   }
@@ -377,11 +381,11 @@ body {
     .free-button {
       background: #fff;
       color: #000;
-			border: none;
-			&:hover{
-				color: #fe4fa7;
-				border: solid 1px #000;
-			}
+      border: solid 1px #fff;
+      &:hover {
+        color: #fe4fa7;
+        border: solid 1px #000;
+      }
     }
   }
 }
@@ -431,11 +435,6 @@ body {
     justify-content: space-between;
     width: 55%;
     margin: 0 auto;
-
-    &-copyright {
-    }
-    &-links {
-    }
   }
 }
 .helper-links {
